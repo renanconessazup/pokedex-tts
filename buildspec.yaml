@@ -12,7 +12,7 @@ phases:
       - echo Building static site...
       - yarn build
       - echo Run tests...
-      - CI=true yarn test
+      - yarn test
 artifacts:
   type: zip
   paths:
