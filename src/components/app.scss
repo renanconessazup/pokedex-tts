@@ -18,6 +18,9 @@
 
         .pokemon--details {
             color: #FFF;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         .btn--find {
@@ -33,6 +36,10 @@
             font-size: 28px;
             color: #FFF;
             text-align: center;
+        }
+
+        .pokemon-image {
+            width: 15vw;
         }
     }
 }
