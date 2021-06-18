@@ -9,15 +9,15 @@ phases:
       - yarn install
   build:
     commands:
-      - echo Building...
+      - echo Building static site...
       - yarn build
-      - echo Testing...
-      - yarn test
+      - echo Run tests...
+      - CI=true yarn test
 artifacts:
-  files:
-    - "**/*"
-  discard-paths: no
-  base-directory: dist
+  type: zip
+  paths:
+    - './build/**/*'
+    - './cicd/**/*'
 
 cache:
   paths:
