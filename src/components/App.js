@@ -8,7 +8,7 @@ import Pokedex from './pokedex'
 function App() {
 
   const [pokemon, setPokemon] = useState(null);
-
+  console.log(process.env)
   useEffect(() => {
 
   }, [pokemon])
