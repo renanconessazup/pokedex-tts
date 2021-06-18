@@ -5,6 +5,7 @@ import App from './App';
 
 it('Render page', () => {
     const app = render(<App />);
+    expect(app.getByText("Pokemon Find")).toBeTruthy();
     expect(app.getByText("Nenhum Pokemon!")).toBeTruthy();
     expect(app.getByText("Buscar")).toBeTruthy();
 })
